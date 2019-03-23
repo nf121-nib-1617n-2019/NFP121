@@ -10,4 +10,6 @@ comment2.text=\r\n\ Met\ en\ place\ les\ engagements.\r\n\r\n\ M\u00E9thode\ app
 comment3.params=
 comment3.target=void\ tearDown()
 comment3.text=\r\n\ Supprime\ les\ engagements\r\n\r\n\ M\u00E9thode\ appel\u00E9e\ apr\u00E8s\ chaque\ appel\ de\ m\u00E9thode\ de\ test.\r\n
-numComments=4
+comment4.params=
+comment4.target=void\ test_fahrenheitEnCelsius()
+numComments=5

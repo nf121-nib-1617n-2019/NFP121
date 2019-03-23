@@ -24,12 +24,7 @@ package question3;
  *          engagements, et suivi d'un appel à tearDown(), qui les détruit.
  */
 public class AuditeurCNAMTest extends junit.framework.TestCase {
-    // Définissez ici les variables d'instance nécessaires à vos engagements;
-    // Vous pouvez également les saisir automatiquement du présentoir
-    // à l'aide du menu contextuel "Présentoir --> Engagements".
-    // Notez cependant que ce dernier ne peut saisir les objets primitifs
-    // du présentoir (les objets sans constructeur, comme int, float, etc.).
-
+   
     /**
      * Constructeur de la classe-test AuditeurCNAMTest.
      */
@@ -56,14 +51,21 @@ public class AuditeurCNAMTest extends junit.framework.TestCase {
         // Libérez ici les ressources engagées par setUp()
     }
 
-    /*
-     * Il ne vous reste plus qu'à définir une ou plusieurs méthodes de test. Ces
-     * méthodes doivent vérifier les résultats attendus à l'aide d'assertions
-     * assertTrue(<boolean>). Par convention, leurs noms devraient débuter par
-     * "test". Vous pouvez ébaucher le corps grace au menu contextuel
-     * "Enregistrer une méthode de test".
-     */
-
+     public void test_char() {
+        question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("Aé1áâ",
+                "báé", "1617n");
+        assertEquals("testing char","A_1__", auditeur1.toString());
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
     /** Un test de la méthode toString(). */
     public void test_toString() {
         question3.AuditeurCNAM auditeur1 = new question3.AuditeurCNAM("Dupont",

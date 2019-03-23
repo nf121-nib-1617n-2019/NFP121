@@ -61,12 +61,11 @@ public class FahrenheitCelsiusTest extends junit.framework.TestCase
         //Libérez ici les ressources engagées par setUp()
     }
 
-    /**
-     * Il ne vous reste plus qu'à définir une ou plusieurs méthodes de test.
-     * Ces méthodes doivent vérifier les résultats attendus à l'aide d'assertions
-     * assertTrue(<boolean>).
-     * Par convention, leurs noms devraient débuter par "test".
-     * Vous pouvez ébaucher le corps grâce au menu contextuel "Enregistrer une méthode de test".
-     */
+       public void test_fahrenheitEnCelsius() {
+           
+           assertEquals("    10 °F -> -12.0 °C ? ", -12.0, question1.FahrenheitCelsius.fahrenheitEnCelsius(10), 0.1);
+		 
+         
+	}
 
 }

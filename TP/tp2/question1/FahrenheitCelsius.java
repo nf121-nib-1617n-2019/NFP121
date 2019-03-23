@@ -1,3 +1,6 @@
+
+
+
 package question1;
 
 /**
@@ -19,9 +22,18 @@ public class FahrenheitCelsius {
 		// pour tous les paramètres de la ligne de commande
 		int fahrenheit = 0;
 		float celsius = 0;
-		System.out.println(fahrenheit + "\u00B0F -> " + celsius + "\u00B0C"); // ligne,
-																				// format
-																				// imposés
+		 	
+		
+		
+		 
+		for( int j =0; j<args.length;j++){ 
+		    fahrenheit = Integer.parseInt(args[j]) ;
+		 celsius = fahrenheitEnCelsius(fahrenheit) ;
+		
+		System.out.println(fahrenheit + "\u00B0F -> " + celsius + "\u00B0C"); 
+		}
+		
+		
 																				
 	}
 
@@ -33,9 +45,10 @@ public class FahrenheitCelsius {
 	 * @return la conversion en degré Celsius
 	 */
 	public static float fahrenheitEnCelsius(int f) {
-
-		return 0.F; // à compléter en remplaçant ce return 0.F par la fonction
-					// de conversion
+                 double cel;
+                 cel=((f-32)*5)/9;
+		return ((int)cel*10)/10.0f;
+		 
 	}
 
 }
