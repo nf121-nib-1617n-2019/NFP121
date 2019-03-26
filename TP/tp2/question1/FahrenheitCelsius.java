@@ -45,9 +45,9 @@ public class FahrenheitCelsius {
 	 * @return la conversion en degré Celsius
 	 */
 	public static float fahrenheitEnCelsius(int f) {
-                 double cel;
-                 cel=((f-32)*5)/9;
-		return ((int)cel*10)/10.0f;
+               
+            
+		return (float)((5*(f-32))/9.0);
 		 
 	}
 

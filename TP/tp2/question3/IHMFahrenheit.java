@@ -45,10 +45,10 @@ public class IHMFahrenheit extends JFrame implements ActionListener{
   
   
    public static float fahrenheitEnCelsius( int f){
-      double cel;
-                 cel=((f-32)*5)/9;
+      float cel;
+                 cel=(float)(((f-32)*5)/9.0);
                   if(cel <= -273.1F) return -273.1F;
-        return ((int)cel*10)/10.0f;
+        return cel;
      }
   
   public static void main(String[] args){
